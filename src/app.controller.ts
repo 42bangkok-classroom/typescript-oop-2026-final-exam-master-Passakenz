@@ -7,7 +7,7 @@ export class AppController {
 
   @Get()
   getHello(): unknown {
-    const response = this.appService.getHello();
+    const p00 = this.appService.getHello();
     return {
       success: true,
       data: {
