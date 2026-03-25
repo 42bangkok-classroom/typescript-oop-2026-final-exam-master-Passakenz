@@ -8,14 +8,14 @@ export class AppController {
 
   @Get()
   getHello(): unknown {
-    const response = this.appService.getHello
+    const response = this.appService.getHello;
     return {
-      success : true,
-      data : {
-        service : 'purchase-api',
-        version : '1.0.0'
+      success: true,
+      data: {
+        service: 'purchase-api',
+        version: '1.0.0',
       },
-      message : "Hello NestJS"
-    }
+      message: 'Hello NestJS',
+    };
   }
 }
