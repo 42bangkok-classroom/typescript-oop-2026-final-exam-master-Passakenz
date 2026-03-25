@@ -10,10 +10,7 @@ export class AppController {
     const p00 = this.appService.getHello();
     return {
       success: true,
-      data: {
-        service: 'purchase-api',
-        version: '1.0.0',
-      },
+      data: p00,
       message: 'Hello NestJS',
     };
   }
