@@ -1,6 +1,5 @@
 import { Controller, Get } from '@nestjs/common';
 import { AppService } from './app.service';
-import { ApiResponse } from './interfaces/response.interface';
 
 @Controller()
 export class AppController {
@@ -8,7 +7,7 @@ export class AppController {
 
   @Get()
   getHello(): unknown {
-    const response = this.appService.getHello;
+    const response = this.appService.getHello();
     return {
       success: true,
       data: {
