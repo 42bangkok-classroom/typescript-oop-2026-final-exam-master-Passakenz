@@ -2,10 +2,11 @@ import { Injectable } from '@nestjs/common';
 
 @Injectable()
 export class AppService {
-  getHello(): unknown{
-    return Object ;{
-      service: 'purchase-api'
-      version: '1.0.0'
-    };
+  getHello(): unknown {
+    return Object;
+    {
+      service: 'purchase-api';
+      version: '1.0.0';
+    }
   }
 }
